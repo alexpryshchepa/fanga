@@ -1,0 +1,22 @@
+$mobile-width: 768px;
+$tablet-width: 1024px;
+$desktop-small-width: 1280px;
+
+$color-primary: #fc4c02;
+$color-secondary: #616161;
+$color-dark: #212121;
+$color-success: #8bc34a;
+$color-error: #f44336;
+
+$font-family-base: 'Roboto', 'Helvetica', 'Georgia', sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+:export {
+  colorPrimary: $color-primary;
+  colorSecondary: $color-secondary;
+  colorDark: $color-dark;
+  colorSuccess: $color-success;
+  colorError: $color-error;
+}

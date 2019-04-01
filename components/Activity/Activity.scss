@@ -1,0 +1,86 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+@import 'styles/functions';
+
+.root {
+  position: relative;
+  padding: 16px;
+  color: $color-primary;
+  background-color: #fff;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  @include text-overflow;
+  color: $color-dark;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.desc {
+  margin-top: 0;
+  color: $color-secondary;
+}
+
+.info {
+  margin-bottom: 16px;
+}
+
+.infoRow {
+  @include text-overflow;
+  color: #000;
+  font-weight: $font-weight-medium;
+  margin: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 4px;
+  }
+
+  & > span {
+    font-weight: $font-weight-regular;
+  }
+}
+
+.device,
+.gear {
+  color: $color-dark;
+  font-weight: $font-weight-medium;
+  
+  & > span {
+    font-weight: $font-weight-regular;
+  }
+}
+
+.laps {
+  color: $color-dark;
+}
+
+.lap {
+  font-weight: $font-weight-medium;
+
+  & > ul {
+    & > li {
+      & > span {
+        font-weight: $font-weight-regular;
+      }
+    }
+  }
+}
+
+.photo {
+  display: block;
+  max-width: 50%;
+  margin-bottom: 24px;
+  
+  @include desktop-small {
+    max-width: 100%;
+  }
+}
+
+.button {
+  margin-top: 48px;
+}

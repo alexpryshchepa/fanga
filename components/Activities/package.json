@@ -1,0 +1,6 @@
+{
+  "name": "Activities",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Activities.js"
+}

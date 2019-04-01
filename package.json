@@ -1,0 +1,37 @@
+{
+  "name": "fanga",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "@mapbox/polyline": "^1.0.0",
+    "@material-ui/core": "^3.9.1",
+    "@material-ui/icons": "^3.0.2",
+    "@turf/turf": "^5.1.6",
+    "@zeit/next-sass": "^1.0.1",
+    "decode-google-map-polyline": "^1.0.1",
+    "immutable": "^4.0.0-rc.12",
+    "js-string-escape": "^1.0.1",
+    "lodash": "^4.17.11",
+    "next": "^7.0.2",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.2.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-jss": "^8.6.1",
+    "react-map-gl": "^4.0.9",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.7",
+    "redux-thunk": "^2.3.0",
+    "reset-css": "^4.0.1",
+    "viewport-mercator-project": "^6.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^3.1.3"
+  }
+}

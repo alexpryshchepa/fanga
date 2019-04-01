@@ -1,0 +1,44 @@
+@import '~styles/variables';
+@import '~styles/mixins';
+
+:global {
+  // @import '~reset-css';
+
+  html {
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    color: $color-dark;
+    font-family: $font-family-base;
+
+    @include tablet {
+      overflow-y: scroll;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  input,
+  textarea,
+  button,
+  select {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    background: none;
+    padding: 0;
+    margin: 0;
+    color: $color-dark;
+    font-family: $font-family-base;
+  }
+
+  textarea {
+    resize: none;
+    overflow-y: auto;
+  }
+}
